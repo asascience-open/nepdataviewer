@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" ?>
+<!--
+-->
+<configuration>
+	<!--mapservice must be specified, and is the label of the layer (Map Service) as 
+		listed in the config.xml. If no ids are listed for the excludeLayer, then
+		the entire map service will be excluded from the legend. If you specify id(s)
+		then only the id(s) of the mapservice will be excluded from the legened-->
+	<!--Example: 
+		<excludeLayer mapservice="Homeland Security Operations">0,1</excludeLayer>
+	-->
+	<excludeLayers>
+		<excludeLayer mapservice="Boundaries and Places"></excludeLayer>
+		<excludeLayer mapservice="Streets"></excludeLayer>
+		<excludeLayer mapservice="Ocean_Basemap"></excludeLayer>
+	</excludeLayers>
+	<excludeGraphicLayers>true</excludeGraphicLayers>
+</configuration>
